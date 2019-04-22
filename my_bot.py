@@ -2,6 +2,7 @@ import discord
 
 # server id = 464209055485919242
 
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged in as')
@@ -18,4 +19,4 @@ class MyClient(discord.Client):
             await message.channel.send('Hello!!!'.format(message))
 
 client = MyClient()
-client.run('ULTRA SECRET TOKEN')
+client.run(TOKEN)
